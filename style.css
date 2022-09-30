@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background: rgb(0, 0, 254);
+  min-height: 100vh;
+  text-align: center;
+  color: #3e51bd;
+  display: grid;
+}
+
+body .card {
+  background: white;
+  padding: 20px 7px 0 7px;
+  margin: 20px auto 20px;
+  min-width: 300px;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 30px;
+  border: 3px solid #19204b;
+}
+
+body .card div {
+  font-size: 1.1rem;
+  color: black;
+}
+
+body .card h1 {
+  text-transform: uppercase;
+}
+
+body .card label {
+  display: block;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+body .card input {
+  background: none;
+  outline: none;
+  border: 1px solid #3e51bd;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  width: 350px;
+  text-align: center;
+}
+
+body .card button,
+body .stockDisplay button {
+  background: #3e51bd;
+  border-radius: 20px;
+  outline: 0;
+  border: none;
+  padding: 0.7rem;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  display: block;
+  align-items: center;
+  margin: 0 auto 7px;
+}
+
+.btn {
+  margin-bottom: 10px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.stockDisplay {
+  text-align: center;
+  background: white;
+  padding: 15px;
+  margin: 0 auto 20px;
+  min-width: 300px;
+  width: 95%;
+  max-width: 1550px;
+  border-radius: 30px;
+  border: 3px solid #19204b;
+}
+
+.stockDisplay div {
+  margin: 10px 0 10px 15px;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.stockDisplay h2 {
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.stockDisplay h5 {
+  /* margin: 10px auto; */
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 0 20px;
+  color: #3e51bd;
+  padding-top: 10px;
+}
+.export {
+  display: flex;
+}
+.btn2 {
+  display: flex;
+}
+h3 {
+  margin: 15px auto 15px;
+  font-size: 1.1rem;
+  color: black;
+  padding: 5px 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  color: orangered;
+}
+
+ul {
+  text-align: left;
+  list-style: none;
+  padding: 0.7rem;
+  /* font-size: 1.2rem; */
+  cursor: pointer;
+}
+li {
+  flex: 1.2 0 25%;
+  /* min-width: 280px; */
+  border: 1px solid #16d9e7;
+  /* margin: 10px; */
+  border-radius: 5px;
+  padding: 5px 5px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.084);
+  color: #3e51bd;
+  font-size: 1.2rem;
+}
+h4 {
+  color: black;
+}
+em {
+  font-style: italic;
+  color: black;
+  cursor: none;
+  pointer-events: none;
+}
+span {
+  cursor: none;
+  pointer-events: none;
+}
+
+.checkbox-container,
+.checkbox-container2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 20px 30px;
+}
+.boxLabel {
+  margin: 0 15px;
+}
+
+input[type="checkbox"] {
+  font-size: 1.4rem;
+  padding: auto 10px;
+  align-items: center;
+  color: #3e51bd;
+}
+
+input[type="checkbox"]:checked {
+  background: #3e51bd;
+  color: wheat;
+  transform: scale(1.1);
+  filter: brightness(120%);
+}
+
+label {
+  cursor: pointer;
+  /* border: 1px solid #3e51bd; */
+  /* background: white; */
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.2s;
+  user-select: none; /* ne pas permettre la selection du texte des labels, peut modifier des comportements */
+}
+@media screen and (max-width: 880px) {
+  .checkbox-container {
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 750px) {
+  .stockDisplay h5 {
+    font-size: 1.2 rem;
+    margin: 0 5px;
+  }
+  .boxLabel {
+    margin: 0 5px;
+  }
+  label {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  body .card {
+    margin: 15px auto 15px;
+  }
+  body .card h1 {
+    font-size: 1.4rem;
+  }
+  body .card input {
+    font-size: 1.1rem;
+    width: 300px;
+    margin: 3px;
+  }
+  h3 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  li {
+    font-size: 1.1rem;
+  }
+  body .card button,
+  i {
+    font-size: 1.1rem;
+  }
+  .export {
+    padding: 0 0 0 10px;
+  }
+
+  body .card label {
+    font-size: 1.1rem;
+  }
+
+  .boxLabel {
+    margin: 0;
+  }
+  label {
+    font-size: 0.9rem;
+  }
+  .stockDisplay div {
+    text-align: left;
+    margin: 5px 2px 5px 5px;
+  }
+  .stockDisplay h5 {
+    font-size: 1 rem;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 565px) {
+  .checkbox-container2 {
+    display: block;
+  }
+  .stockDisplay h2 {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 515px) {
+  h5 {
+    font-size: 0.4 rem;
+  }
+  label {
+    font-size: 0.8rem;
+  }
+  .stockDisplay div {
+    margin: 0 3px 0 3px;
+  }
+  .stockDisplay h5 {
+    font-size: 0.8 rem;
+    text-align: left;
+  }
+  .checkbox-container {
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  body .card {
+    margin: 7px auto 7px;
+  }
+  body .card h1 {
+    font-size: 1.2rem;
+  }
+  body .card input {
+    width: 280px;
+    margin: 0 auto;
+  }
+  h3 {
+    margin-top: 4px;
+    margin-bottom: 3px;
+    font-size: 1rem;
+  }
+  li {
+    font-size: 1rem;
+  }
+  body .card button,
+  i {
+    font-size: 0.9rem;
+    letter-spacing: normal;
+  }
+
+  body .card label {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  body .card button,
+  i {
+    font-size: 0.8rem;
+    letter-spacing: normal;
+  }
+}

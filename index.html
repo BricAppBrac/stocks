@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Saisie des stocks</title>
+  <link rel="shortcut icon" href="./icons/icoStock128px.png">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/icoStock96px.png">
+    <meta name="apple-mobile-web-app-status-bar" content="white">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="white">
+    
+</head>
+
+<body>
+
+  <div class="card" id ="card">
+    <h1>Saisie des stocks</h1>
+    <h3 id="message">Saisir le libellé de l'objet</h3>
+    <form action="">
+  
+    <label for="item">Libellé</label>
+    <input id="item" type="text" minlength="2" placeholder = "Libellé de l'objet" autocomplete="off" cols="30" rows="2"  required />
+
+    <label for="price">Prix unitaire ( € )</label>
+    <input id="price" type="number" min="0" value = "0" required />
+
+    <label for="place1">Stock au bureau</label>
+    <input id="place1" type="number" min="0" value = "0" required placeholder="Nombre stocké au bureau"required />
+
+    <label for="place2">Stock Camion 1</label>
+    <input id="place2" type="number" min="0" value = "0" required placeholder="Nombre stocké dans le camion 1"required />
+
+    <label for="place3">Stock Camion 2</label>
+    <input id="place3" type="number" min="0" value = "0" required placeholder="Nombre stocké dans le camion 2"required />
+
+    <label for="place4">Stock chez le client</label>
+    <input id="place4" type="number" min="0" value = "0" required placeholder="Nombre stocké chez les clients"required />
+    
+      <div class="btn">
+        <button id = "suppr">Suppr</button>
+        <button id = "rech">Rechercher</button>
+        <button id = "valid">Créer/Modif</button>
+        <button id = "init"><i class="fa-solid fa-rotate-right"></i></button>
+      </div>
+    </form>
+    
+  </div>
+
+  <div class="stockDisplay">
+    <h2>Liste</h2>
+    
+    <div class="btn2">
+      <div class="export">
+      <h5>Export</h5>
+      <button id ="exportClicked"><i class="fa-sharp fa-solid fa-file-export"></i></button>
+    </div>
+      <div class="checkbox-container" id="checkboxInput">
+        <div>
+        <div class="boxLabel">
+          <input type="radio" id="optionComplete">
+          <label for="optionComplete">Complet</label>
+        </div>
+      </div>
+      <div class="checkbox-container2">
+        <div class="boxLabel">
+        <input type="radio" id="optionStockageBureau">
+        <label for="optionStockageBureau">Bureau</label>
+      </div>
+      <div class="boxLabel">
+        <input type="radio" id="optionCamion1">
+        <label for="optionCamion1">Camion1</label>
+      </div>
+        <div class="boxLabel">
+        <input type="radio" id="optionCamion2">
+        <label for="optionCamion2">Camion2</label>
+      </div>
+        <div class="boxLabel">
+        <input type="radio" id="optionClient">
+        <label for="optionClient">Clients</label>
+      </div>
+    </div>
+      </div>
+      
+    </div>
+    <h3>Sélectionner un élément de la liste pour l'afficher dans le formulaire</h3>
+    <ul id="list"></ul>
+  </div>
+    
+
+<!-- app.js pour vérifier que le navigateur accepte le service worker -->
+ <script src="./app.js"></script>
+ 
+<!-- index.js pour le fonctionnement de l'appli avec Local Storage  -->
+  <script src="./index.js"></script>
+ 
+</body>
+
+
+
+</html>

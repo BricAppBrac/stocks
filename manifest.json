@@ -1,0 +1,62 @@
+{
+  "name": "Saisie des stocks",
+  "short_name": "SdS",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0d1840",
+  "theme_color": "white",
+  "orientation": "portrait-primary",
+  "icons": [{
+    "src": "/icons/icoStock32px.png",
+    "type": "image/png",
+      "sizes": "32x32"
+  },
+  {
+    "src": "/icons/icoStock72px.png",
+    "type": "image/png",
+      "sizes": "72x72"
+  },
+  {
+    "src": "/icons/icoStock96px.png",
+    "type": "image/png",
+      "sizes": "96x96"
+  },
+  {
+    "src": "/icons/icoStock128px.png",
+    "type": "image/png",
+      "sizes": "128x128"
+  },
+  {
+    "src": "/icons/icoStock144px.png",
+    "type": "image/png",
+      "sizes": "144x144"
+  },
+  {
+    "src": "/icons/icoStock152px.png",
+    "type": "image/png",
+      "sizes": "152x152"
+  },
+  {
+    "src": "/icons/icoStock192px.png",
+    "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+  },
+  {
+    "src": "/icons/icoStock256px.png",
+    "type": "image/png",
+      "sizes": "256x256"
+  },
+  {
+    "src": "/icons/icoStock384px.png",
+    "type": "image/png",
+      "sizes": "384x384"
+  },
+  {
+    "src": "/icons/icoStock512px.png",
+    "type": "image/png",
+      "sizes": "512x512"
+  }
+]
+
+}
